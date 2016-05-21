@@ -1,0 +1,28 @@
+Comment installer le projet :
+
+1: Installer Nodejs sur la machine (très facile, via l'installeur classique)
+
+2: Dans la console, aller (via des cd [Change Directory], ex: cd /Documents/Lydia/CharlesDenner) dans le dossier CharlesDenner
+	- Sur Windows => Cmder
+	- Sur Mac => iTerm2
+	Petite astuce, écrire juste cd puis drag & droper le dossier depuis l'interface graphique dans la console (remplira le chemin)
+
+3: Taper la commande npm install, qui installera toutes les dépendences du projet (Bootstrap, gulp, sass...)
+
+4: Taper la commande npm install gulp --global qui installera gulp dans la console de manière générale, ce qui permet de taper directement gulp dans la console
+	Sans avoir à aller le chercher dans les sous dossiers de node_modules...
+
+
+
+
+
+
+Comment lancer le projet (déjà installé) :
+
+
+
+5: Taper juste gulp dans la console pour lancer une première compilation complète du projet (générera les fichiers de /css, et /js)
+
+6: Puis taper gulp watch pour que ça compile en temps réel pendant qu'on développe !
+
+7: Travailler d'arrache-pied avec du super sass ;)
