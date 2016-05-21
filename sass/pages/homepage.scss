@@ -14,16 +14,22 @@ header, .oeuvres, .livre {
 h2{
     text-transform:  uppercase;
     font-size: 3rem;
+    margin: 5px 0 0 0;
+    line-height: 4.5rem;
 }
 
 h3 {
     text-transform:  uppercase;
     font-size: 3rem;
+    margin-bottom: 0;
 }
 
 h4 {
     font-family: "montserratbold", arial;
     text-transform:  uppercase;
+    color:$tertiary;
+    margin: 5px 0 20px 0;
+    font-weight: bold;
 
 }
 
@@ -54,6 +60,7 @@ article {
 
      font-family: "montserratlight", arial;
      font-size: 0.9rem;
+     padding-right: 20px;
 
 
 }

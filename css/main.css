@@ -3578,7 +3578,9 @@ header {
       color: #cc1474;
       position: relative;
       border-top: 8px solid #cc1474;
-      padding-top: 20px; }
+      padding-top: 22px; }
+  header .punchline {
+    margin-top: 10vh; }
   header .menu {
     margin: 0;
     padding: 0;
@@ -3594,9 +3596,12 @@ header {
     padding-top: 20px; }
   header h1 {
     font-family: montserrat, arial;
+    font-weight: bold;
+    color: #a4cdff;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 1rem; }
+    font-size: 1rem;
+    margin: 0; }
   header .logo {
     text-transform: uppercase;
     font-family: montserrat, arial;
@@ -3650,15 +3655,21 @@ header, .oeuvres, .livre {
 
 h2 {
   text-transform: uppercase;
-  font-size: 3rem; }
+  font-size: 3rem;
+  margin: 5px 0 0 0;
+  line-height: 4.5rem; }
 
 h3 {
   text-transform: uppercase;
-  font-size: 3rem; }
+  font-size: 3rem;
+  margin-bottom: 0; }
 
 h4 {
   font-family: "montserratbold", arial;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #a4cdff;
+  margin: 5px 0 20px 0;
+  font-weight: bold; }
 
 article {
   background-color: #004764;
@@ -3680,7 +3691,8 @@ article {
 
 .description {
   font-family: "montserratlight", arial;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  padding-right: 20px; }
 
 .offsettop {
   margin-top: -100px;
