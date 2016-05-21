@@ -1,0 +1,70 @@
+.oeuvres, .livre {
+    margin-bottom: 8vh;
+}
+
+.savie, .oeuvres {
+    height: 65vh;
+}
+
+header, .oeuvres, .livre {
+    background-color: #004764;
+    color: white;
+}
+
+h2{
+    text-transform:  uppercase;
+    font-size: 3rem;
+}
+
+h3 {
+    text-transform:  uppercase;
+    font-size: 3rem;
+}
+
+h4 {
+    font-family: "montserratbold", arial;
+    text-transform:  uppercase;
+
+}
+
+article {
+     background-color: #004764;
+     color: white;
+     font-family: "montserratbold", arial;
+     
+}
+
+.tighty {
+    
+    padding: 0 5!important;
+    height: 60vh;
+    margin: 0 5px;
+}
+
+.large {
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    padding: 0 0!important;
+    height: 30vh;
+    border: 1px solid black;
+    float: none!important;
+}
+
+.description {
+
+     font-family: "montserratlight", arial;
+     font-size: 0.9rem;
+
+
+}
+
+.offsettop {
+    margin-top: -100px;
+    position: relative;
+    z-index: 999;
+}
+
+.articlelivre {
+    height: 370px;
+    overflow: hidden;
+}
