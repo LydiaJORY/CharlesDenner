@@ -4,7 +4,7 @@ html, body{
 	padding: 0;
 	height:100%;
 	width:100%;
-	font-family: "butlermedium", verdana;
+	font-family: $primary-font;
 	background-color:#fff;
 	color: #000;
     line-height: 35px;
@@ -13,4 +13,8 @@ html, body{
 
 li {
     list-style: none;
+}
+
+a:hover {
+	text-decoration: none;
 }

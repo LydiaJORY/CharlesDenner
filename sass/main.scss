@@ -1,17 +1,23 @@
 /**
  * VARIABLES
  */
- $primary: #004764;
+ //Colors
+$primary: #004764;
+$secondary: #cc1474;
+$tertiary: #a4cdff;
 
-
-
-
-
+//Fonts
+$primary-font: butler;
+$secondary-font: montserrat, arial;
 
 /**
  * Fonts
  */
 @import "fonts";
+/**
+ * Font-awesome
+ */
+@import "font-awesome";
 
 /**
  * Bootstrap

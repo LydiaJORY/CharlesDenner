@@ -1,32 +1,72 @@
 header {
     height: 80vh;
+    margin:0 -15px;
+
+
+
+    a {
+        color:#fff;
+        transition: color 0.2s;
+
+        &:hover{
+            color:$secondary;
+            position: relative;
+            border-top: 8px solid $secondary;
+            padding-top: 20px;
+
+
+            
+        }
+    }
+    .menu {
+        margin: 0;
+        padding: 0;
+        text-align: right;
+        font-size: 0.9rem;
+
+
+
+        li {
+            display: inline-block;
+            font-family: $secondary-font;
+          
+            text-transform:  uppercase;
+
+            &:not(:last-child) {
+                padding-right: 50px;
+            }
+        }
+    }
+    nav {
+        padding-top: 20px;
+    }
+
+            
+
+    h1 {
+        font-family: $secondary-font;
+        text-transform:  uppercase;
+        letter-spacing: 5px;
+        font-size: 1rem;
+    }
+
+    .logo {
+        text-transform:  uppercase;
+        font-family: $secondary-font;
+        font-weight: bold;
+        font-size: 1.5rem; 
+        letter-spacing: 10px;
+        margin-left:35px;
+
+        span {
+            padding-left: 55px;
+        }
+    }
+
+    .denner {
+       
+        padding-left: 30px;
+    }
+
 }
 
-nav {
-    padding-top: 20px;
-}
-
-header ul li {
-    display: inline-block;
-    padding: 0 25px;
-    font-family: "montserratlight", arial;  
-}
-
-h1 {
-    font-family: "montserratbold", arial;
-    text-transform:  uppercase;
-    letter-spacing: 5px;
-    font-size: 1rem;
-}
-
-.logo {
-    text-transform:  uppercase;
-    font-family: "montserratbold", arial;
-    font-size: 1.5rem; 
-    letter-spacing: 10px;
-
-}
-
-.deux {
-    margin-right: 10px;
-}
