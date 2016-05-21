@@ -7,7 +7,7 @@
 }
 
 header, .oeuvres, .livre {
-    background-color: #004764;
+    background-color: $primary;
     color: white;
 }
 
@@ -28,7 +28,7 @@ h4 {
 }
 
 article {
-     background-color: #004764;
+     background-color: $primary;
      color: white;
      font-family: "montserratbold", arial;
      
