@@ -2,11 +2,11 @@
 	background: $primary;
     color: #fff;
     text-align: center;
-    padding: 15px 0;
+    padding: 3px 0;
     font-family: $secondary-font;
     text-transform:  uppercase;
     letter-spacing: 3px;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 
     ul {
         margin: 0;
@@ -14,10 +14,12 @@
 
     a {
         color: #fff;
+        transition: color 0.2s;
 
         &:hover {
             color: $secondary;
             text-decoration: none;
+
         }
     }
 
@@ -32,5 +34,18 @@
         .fa {
             font-size: 150%;
         }
+    }
+}
+
+
+.sponcorts{
+    text-transform:  uppercase;
+    color: $primary;
+    font-family:$secondary-font;
+    font-weight:bold;
+
+    .navigationfooter{
+        font-size:0.5rem;
+        text-transform: none;
     }
 }
