@@ -38,14 +38,70 @@
 }
 
 
-.sponcorts{
+.sponsorts{
     text-transform:  uppercase;
     color: $primary;
     font-family:$secondary-font;
     font-weight:bold;
+    background: url('../img/pattern_footer.png') no-repeat bottom left;
+    min-height: 219px;
+    padding-top: 100px;
 
-    .navigationfooter{
+    ul {
+        padding: 0;
+    }
+
+    ul li {
+        display: inline-block;
+        padding: 0 5px;
+
+        &:first-child{
+            padding: 0;
+        }
+    }
+
+    .search {
+        background-color: $primary;
+        color:#fff;
+        height: 30px;
+        width: 200px;
+        font-size: 0.8rem;
+        text-transform: none;
+        border: none;
+        display: inline-block;
+    }
+
+    .search__icon{
+        background-color: $secondary;
+        height: 40px;
+        width: 40px;
+        color:#fff;
+        display: inline-block;
+        border:none;
+        padding:0;
+        position: relative;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .sponsorts__logo {
+            height: 50px;
+            
+        }
+
+    .sponsorts__navigation{
         font-size:0.5rem;
         text-transform: none;
+
+        ul {
+            width: 200px;
+        }
+
+        li {
+            display: inline-block;
+            width: 80px;
+        }
+
+        
     }
 }

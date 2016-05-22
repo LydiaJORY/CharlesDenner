@@ -3562,8 +3562,11 @@ html, body {
 li {
   list-style: none; }
 
-a:hover {
-  text-decoration: none; }
+a {
+  color: #000; }
+  a:hover {
+    text-decoration: none;
+    color: #cc1474; }
 
 /**
  * Header
@@ -3642,14 +3645,51 @@ header {
     .footer li .fa {
       font-size: 150%; }
 
-.sponcorts {
+.sponsorts {
   text-transform: uppercase;
   color: #004764;
   font-family: montserrat, arial;
-  font-weight: bold; }
-  .sponcorts .navigationfooter {
+  font-weight: bold;
+  background: url("../img/pattern_footer.png") no-repeat bottom left;
+  min-height: 219px;
+  padding-top: 100px; }
+  .sponsorts ul {
+    padding: 0; }
+  .sponsorts ul li {
+    display: inline-block;
+    padding: 0 5px; }
+    .sponsorts ul li:first-child {
+      padding: 0; }
+  .sponsorts .search {
+    background-color: #004764;
+    color: #fff;
+    height: 30px;
+    width: 200px;
+    font-size: 0.8rem;
+    text-transform: none;
+    border: none;
+    display: inline-block; }
+  .sponsorts .search__icon {
+    background-color: #cc1474;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    display: inline-block;
+    border: none;
+    padding: 0;
+    position: relative;
+    bottom: 10px;
+    right: 10px; }
+  .sponsorts .sponsorts__logo {
+    height: 50px; }
+  .sponsorts .sponsorts__navigation {
     font-size: 0.5rem;
     text-transform: none; }
+    .sponsorts .sponsorts__navigation ul {
+      width: 200px; }
+    .sponsorts .sponsorts__navigation li {
+      display: inline-block;
+      width: 80px; }
 
 /**
  * Homepage
@@ -3730,15 +3770,8 @@ article {
   letter-spacing: 1px;
   position: relative;
   text-align: right;
-  padding: 0 15px; }
-  .btnlire:after {
-    content: '';
-    height: 20px;
-    width: 100px;
-    top: 20px;
-    right: 0;
-    position: absolute;
-    background-color: #cc1474; }
+  padding: 0 15px;
+  box-shadow: 5px 5px 0px 0px #cc1474; }
 
 .oeuvrebloc {
   width: 24vw; }

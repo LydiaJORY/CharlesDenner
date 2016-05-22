@@ -98,16 +98,7 @@ article {
     position:relative;
     text-align: right;
     padding: 0 15px;
-
-    &:after{
-        content:'';
-        height: 20px;
-        width: 100px;
-        top: 20px;
-        right: 0;
-        position:absolute;
-        background-color:$secondary;
-     }
+    box-shadow: 5px 5px 0px 0px $secondary;
 }
 
 // A placer dans des feuilles differentes !!! ---------
