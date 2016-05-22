@@ -3573,7 +3573,8 @@ a {
  */
 header {
   height: 80vh;
-  margin: 0 0px; }
+  margin: 0 0px;
+  background: url("../img/silouette_denner.png") no-repeat 0 50px #004764; }
   header a {
     color: #fff;
     transition: color 0.2s; }
