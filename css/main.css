@@ -3574,7 +3574,10 @@ a {
 header {
   height: 80vh;
   margin: 0 0px;
-  background: url("../img/silouette_denner.png") no-repeat 0 50px #004764; }
+  background-image: url("../img/quote_header.png"), url("../img/silouette_denner.png"), url("../img/pattern_header_left.png"), url("../img/pattern_header_right.png");
+  background-repeat: no-repeat;
+  background-color: #004764;
+  background-position: 400px 600px,100px 100px,left top,right top; }
   header a {
     color: #fff;
     transition: color 0.2s; }
@@ -3584,7 +3587,7 @@ header {
       border-top: 8px solid #cc1474;
       padding-top: 22px; }
   header .punchline {
-    margin-top: 10vh; }
+    margin-top: 20vh; }
   header .menu {
     margin: 0;
     padding: 0;
@@ -3606,7 +3609,8 @@ header {
     text-transform: uppercase;
     letter-spacing: 6px;
     font-size: 1rem;
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
   header .logo {
     text-transform: uppercase;
     font-family: montserrat, arial;
@@ -3709,6 +3713,7 @@ h2 {
   text-transform: uppercase;
   font-size: 3rem;
   margin: 5px 0 0 0;
+  padding: 0;
   line-height: 4.5rem; }
 
 h3 {
