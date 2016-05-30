@@ -1,13 +1,13 @@
 html, body{
 
-	margin : 0;
+	margin : 0 0 0 -8px;
 	padding: 0;
 	height:100%;
 	width:100%;
 	font-family: $primary-font;
 	background-color:#fff;
 	color: #000;
-    line-height: 35px;
+    line-height: 33px;
     font-size:16px;
 }
 
@@ -23,3 +23,37 @@ a {
 		color: $secondary;
 	}
 }
+
+
+h2{
+    text-transform:  uppercase;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin: 5px 0 0 0;
+    padding:0;
+    line-height: 4.5rem;
+}
+
+h3 {
+    text-transform:  uppercase;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-family: "montserratbold", arial;
+    text-transform:  uppercase;
+    color:$tertiary;
+    margin: 5px 0 20px 0;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+}
+
+h5{
+    text-transform:  uppercase;
+    font-size: 1.3rem;
+    padding : 0 15px;
+    font-weight:bold;
+}
+

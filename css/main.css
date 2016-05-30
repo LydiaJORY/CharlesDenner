@@ -3549,14 +3549,14 @@ address {
  * General;
  */
 html, body {
-  margin: 0;
+  margin: 0 0 0 -8px;
   padding: 0;
   height: 100%;
   width: 100%;
   font-family: butler;
   background-color: #fff;
   color: #000;
-  line-height: 35px;
+  line-height: 33px;
   font-size: 16px; }
 
 li {
@@ -3568,16 +3568,53 @@ a {
     text-decoration: none;
     color: #cc1474; }
 
+h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin: 5px 0 0 0;
+  padding: 0;
+  line-height: 4.5rem; }
+
+h3 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 0; }
+
+h4 {
+  font-family: "montserratbold", arial;
+  text-transform: uppercase;
+  color: #a4cdff;
+  margin: 5px 0 20px 0;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.8px; }
+
+h5 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding: 0 15px;
+  font-weight: bold; }
+
 /**
  * Header
  */
+@keyframes punchline {
+  from {
+    opacity: 0;
+    margin-top: 13vh; }
+  to {
+    opacity: 1;
+    margin-top: 15vh; } }
+
 header {
   height: 80vh;
   margin: 0 0px;
   background-image: url("../img/quote_header.png"), url("../img/silouette_denner.png"), url("../img/pattern_header_left.png"), url("../img/pattern_header_right.png");
   background-repeat: no-repeat;
   background-color: #004764;
-  background-position: 400px 600px,100px 100px,left top,right top; }
+  background-position: 400px 600px,100px 100px,left top,right top;
+  width: 101%; }
   header a {
     color: #fff;
     transition: color 0.2s; }
@@ -3587,13 +3624,17 @@ header {
       border-top: 8px solid #cc1474;
       padding-top: 22px; }
   header .punchline {
-    margin-top: 20vh; }
+    opacity: 0;
+    animation: punchline ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 0.8s; }
   header .menu {
     margin: 0;
     padding: 0;
     text-align: right;
-    font-size: 0.8rem;
-    letter-spacing: 1px; }
+    font-size: 0.7rem;
+    letter-spacing: 1.4px; }
     header .menu li {
       display: inline-block;
       font-family: montserrat, arial;
@@ -3617,7 +3658,8 @@ header {
     font-weight: bold;
     font-size: 1.5rem;
     letter-spacing: 10px;
-    margin-left: 35px; }
+    margin-left: 35px;
+    letter-spacing: 1vh; }
     header .logo span {
       padding-left: 55px; }
   header .denner {
@@ -3699,40 +3741,36 @@ header {
 /**
  * Homepage
  */
+@keyframes rollOver {
+  from {
+    color: #cc1474; }
+  to {
+    color: white; } }
+
 .oeuvres, .livre {
-  margin-bottom: 8vh; }
+  margin-bottom: 8vh;
+  transition: color 0.2s; }
+  .oeuvres a, .livre a {
+    color: white; }
+    .oeuvres a:hover, .livre a:hover {
+      color: #cc1474;
+      animation: rollOver ease-in 1;
+      animation-fill-mode: forwards;
+      animation-duration: 5s;
+      animation-delay: 0s; }
+
+.oeuvres {
+  background: url("../img/pattern_oeuvre2.png") no-repeat bottom right; }
 
 .savie, .oeuvres {
   height: 65vh; }
 
-header, .oeuvres, .livre {
+.actu {
+  margin-top: 25vh; }
+
+jeun header, .oeuvres, .livre {
   background-color: #004764;
   color: white; }
-
-h2 {
-  text-transform: uppercase;
-  font-size: 3rem;
-  margin: 5px 0 0 0;
-  padding: 0;
-  line-height: 4.5rem; }
-
-h3 {
-  text-transform: uppercase;
-  font-size: 3rem;
-  margin-bottom: 0; }
-
-h4 {
-  font-family: "montserratbold", arial;
-  text-transform: uppercase;
-  color: #a4cdff;
-  margin: 5px 0 20px 0;
-  font-weight: bold; }
-
-h5 {
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  padding: 0 15px;
-  font-weight: bold; }
 
 article {
   background-color: #004764;
@@ -3741,15 +3779,42 @@ article {
   font-family: "montserratbold", arial;
   overflow: hidden; }
   article a {
-    color: white; }
+    color: white;
+    transition: color 0.2s; }
     article a:hover {
       color: #cc1474; }
 
 .tighty {
   padding: 0;
-  height: 60vh;
+  height: 70vh;
   margin: 0px;
   padding: 0; }
+
+.description {
+  font-family: "montserratlight", arial;
+  font-size: 0.9rem;
+  padding-right: 20px;
+  padding-left: 50px; }
+
+.offsettop {
+  margin-top: -100px;
+  padding: 0;
+  position: relative;
+  z-index: 999; }
+
+.article__img {
+  height: 55vh;
+  overflow: hidden;
+  background-color: #cc1474; }
+
+.article__img img {
+  max-height: 100%;
+  transform: scale(1.1);
+  transition: opacity 0.5s, transform 3s;
+  transform-origin: 50% 50%; }
+  .article__img img:hover {
+    opacity: 0.4;
+    transform: scale(1.02); }
 
 .large {
   margin-top: 1vh;
@@ -3759,16 +3824,18 @@ article {
   border: 1px solid black;
   float: none !important; }
 
-.description {
-  font-family: "montserratlight", arial;
-  font-size: 0.9rem;
-  padding-right: 20px; }
+.large__img {
+  overflow: hidden;
+  background-color: #cc1474; }
 
-.offsettop {
-  margin-top: -100px;
-  padding: 0;
-  position: relative;
-  z-index: 999; }
+.large__img img {
+  min-width: 50%;
+  transform: scale(1.1);
+  transition: opacity 0.5s, transform 3s;
+  transform-origin: 50% 50%; }
+  .large__img img:hover {
+    opacity: 0.4;
+    transform: scale(1.02); }
 
 .btnlire {
   text-transform: uppercase;
@@ -3777,11 +3844,55 @@ article {
   position: relative;
   text-align: right;
   padding: 0 15px;
-  box-shadow: 5px 5px 0px 0px #cc1474; }
-
-.oeuvrebloc {
-  width: 24vw; }
+  z-index: 1; }
+  .btnlire:before {
+    content: '';
+    height: 15px;
+    width: 80px;
+    background-color: #cc1474;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    z-index: -1; }
+  .btnlire:hover::before {
+    top: 0px;
+    right: 10px;
+    z-index: -1;
+    content: 'Lire plus';
+    color: white;
+    transition: top 0.1s, right 0.1s; }
+  .btnlire:active::before {
+    color: #cc1474;
+    top: 0px;
+    right: 0px;
+    transition: top 0.1s, right 0.1s; }
 
 .articlelivre {
   height: 370px;
   overflow: hidden; }
+
+.livre {
+  background: url("../img/pattern_livre.png") no-repeat bottom right #004764; }
+
+.oeuvrebloc {
+  width: 24vw; }
+
+.encartActu {
+  margin-top: -2vh; }
+
+/**
+ * saVie
+ */
+.header_vie {
+  height: 15vh;
+  background-image: url("../img/quote_header.png"), url("../img/silouette_denner.png"), url("../img/pattern_header_left.png"), url("../img/pattern_header_right.png");
+  background-position: 400px 600px,100px -100px,left top,right top; }
+
+.savie_page {
+  height: 65vh; }
+
+.description_vie {
+  padding-right: 0px; }
+
+.ancres {
+  text-align: right; }

@@ -1,45 +1,52 @@
+@keyframes rollOver { 
+
+    from { color:$secondary; } 
+    to { color:white; } 
+
+}
+
+// -------- BLOCS PARTIES
+
+
 .oeuvres, .livre {
     margin-bottom: 8vh;
+    transition: color 0.2s;
+
+    a {
+        color: white;
+
+        &:hover {
+            color: $secondary;
+            animation:rollOver ease-in 1;
+            animation-fill-mode:forwards;
+            animation-duration:5s;
+            animation-delay: 0s;
+        }
+    }
+}
+
+.oeuvres {
+    background: url('../img/pattern_oeuvre2.png') no-repeat bottom right;
+
 }
 
 .savie, .oeuvres {
     height: 65vh;
+
 }
+
+.actu {
+    margin-top: 25vh;
+}jeun
+
 
 header, .oeuvres, .livre {
     background-color: $primary;
     color: white;
 }
 
-h2{
-    text-transform:  uppercase;
-    font-size: 3rem;
-    margin: 5px 0 0 0;
-    padding:0;
-    line-height: 4.5rem;
-}
 
-h3 {
-    text-transform:  uppercase;
-    font-size: 3rem;
-    margin-bottom: 0;
-}
-
-h4 {
-    font-family: "montserratbold", arial;
-    text-transform:  uppercase;
-    color:$tertiary;
-    margin: 5px 0 20px 0;
-    font-weight: bold;
-
-}
-
-h5{
-    text-transform:  uppercase;
-    font-size: 1.3rem;
-    padding : 0 15px;
-    font-weight:bold;
-}
+// ----------ARTICLES
 
 article {
      background-color: $primary;
@@ -50,6 +57,7 @@ article {
      
      a {
         color: white;
+        transition: color 0.2s;
 
         &:hover{
             color:$secondary;
@@ -58,12 +66,45 @@ article {
 }
 
 .tighty {
-    
     padding: 0;
-    height: 60vh;
+    height: 70vh;
     margin: 0px;
     padding:0;
 }
+
+
+.description {
+     font-family: "montserratlight", arial;
+     font-size: 0.9rem;
+     padding-right: 20px;
+     padding-left:50px;
+}
+
+.offsettop {
+    margin-top: -100px;
+    padding:0;
+    position: relative;
+    z-index: 999;
+}
+
+.article__img {
+    height: 55vh;
+    overflow: hidden;
+    background-color:$secondary;    
+}
+
+.article__img img {
+    max-height: 100%;
+    transform: scale(1.1);
+    transition: opacity 0.5s, transform 3s;
+    transform-origin: 50% 50%;
+
+    &:hover{
+        opacity: 0.4;
+        transform: scale(1.02);
+    }
+}
+
 
 .large {
     margin-top: 1vh;
@@ -74,22 +115,25 @@ article {
     float: none!important;
 }
 
-.description {
 
-     font-family: "montserratlight", arial;
-     font-size: 0.9rem;
-     padding-right: 20px;
-
-
+.large__img { 
+    overflow: hidden;
+    background-color:$secondary;   
 }
 
-.offsettop {
-    margin-top: -100px;
-    padding:0;
-    position: relative;
-    z-index: 999;
+.large__img img {
+    min-width: 50%;
+    transform: scale(1.1);
+    transition: opacity 0.5s, transform 3s;
+    transform-origin: 50% 50%;
+
+    &:hover{
+        opacity: 0.4;
+        transform: scale(1.02);
+    }
 }
 
+// BOUTONS ------------------
 
 
 .btnlire {
@@ -99,25 +143,80 @@ article {
     position:relative;
     text-align: right;
     padding: 0 15px;
-    box-shadow: 5px 5px 0px 0px $secondary;
+    z-index: 1;
+    //box-shadow: 5px 5px 0px 0px $secondary;
+
+    &:before {
+        content: '';
+        height: 15px;
+        width: 80px;
+        background-color:$secondary;
+        position:absolute;
+        //display: block;
+        top: 6px;
+        right: 0;
+        z-index: -1;
+
+    }
+
+    &:hover::before {
+        top: 0px;
+        right: 10px;
+        z-index: -1;
+        content: 'Lire plus';
+        color: white;
+        transition: top 0.1s, right 0.1s;
+    }
+
+    &:active::before {
+        
+        color: $secondary;
+        top: 0px;
+        right: 0px;
+        transition: top 0.1s, right 0.1s;
+
+    }
 }
 
-// A placer dans des feuilles differentes !!! ---------
 
-// LIVRE
-.oeuvrebloc {
+// LIVRE ---------------
 
-    width:24vw;
-}
-
-// OEUVRES
 .articlelivre {
     height: 370px;
     overflow: hidden;
 }
 
 
+.livre {
+    background: url('../img/pattern_livre.png') no-repeat bottom right $primary;
+}
+
+
+// OEUVRES
+
+.oeuvrebloc {
+
+    width:24vw;
+
+    &:first-child{
+        
+    }
+}
+
 // ACTUS
+
+.encartActu {
+    margin-top: -2vh;
+}
+
+// A placer dans des feuilles differentes !!! ---------
+
+
+
+// PAGE sa VIE
+
+
+
 
 
 
