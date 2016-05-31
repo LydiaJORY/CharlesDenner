@@ -3659,6 +3659,7 @@ header {
     font-size: 1.5rem;
     letter-spacing: 10px;
     margin-left: 35px;
+    color: white;
     letter-spacing: 1vh; }
     header .logo span {
       padding-left: 55px; }
@@ -3883,7 +3884,7 @@ article {
 /**
  * saVie
  */
-.header_vie {
+.header.header_vie {
   height: 15vh;
   background-image: url("../img/quote_header.png"), url("../img/silouette_denner.png"), url("../img/pattern_header_left.png"), url("../img/pattern_header_right.png");
   background-position: 400px 600px,100px -100px,left top,right top; }
@@ -3896,3 +3897,6 @@ article {
 
 .ancres {
   text-align: right; }
+
+.jeunesse.oeuvres {
+  height: 120vh; }
