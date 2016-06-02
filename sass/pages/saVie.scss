@@ -1,6 +1,6 @@
 .header.header_vie {
    height: 15vh;
-   background-image: url('../img/quote_header.png'), url('../img/silouette_denner.png'), url('../img/pattern_header_left.png'), url('../img/pattern_header_right.png');
+   background-image: url ('../img/quote_header.png'), url('../img/silouette_denner.png'), url('../img/pattern_header_left.png'), url('../img/pattern_header_right.png');
    background-position: 400px 600px,100px -100px,left top,right top;
 
 }
@@ -25,16 +25,20 @@ ul.ancres {
 	color:$secondary;
 	text-transform:  uppercase;
 	font-size:0.7rem;
-	position:relative;
 	margin-right:20px;
 
+	li {
+		position:relative;
 
-	li::after{
-		content:'';
-		position:absolute;
-		height: 8px;
-		width: 8px;
-		background-color:$secondary;
+		&:after{
+			content:'';
+			position:absolute;
+			height: 8px;
+			width: 8px;
+			background-color:$secondary;
+			top: 13px;
+			right: -15px;
+		}
 	}
 }
 

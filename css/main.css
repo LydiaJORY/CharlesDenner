@@ -3548,6 +3548,9 @@ address {
 /**
  * General;
  */
+.container-fluid {
+  padding: 0; }
+
 html, body {
   margin: 0 0 0 -8px;
   padding: 0;
@@ -3596,9 +3599,6 @@ h5 {
   padding: 5px 15px 0 15px;
   font-weight: bold; }
 
-input::placeholder {
-  color: pink !important; }
-
 /**
  * Header
  */
@@ -3616,8 +3616,7 @@ header {
   background-image: url("../img/quote_header.png"), url("../img/silouette_denner.png"), url("../img/pattern_header_left.png"), url("../img/pattern_header_right.png");
   background-repeat: no-repeat;
   background-color: #004764;
-  background-position: 400px 600px,100px 100px,left top,right top;
-  width: 101%; }
+  background-position: 400px 600px,100px 100px,left top,right top; }
   header a {
     color: #fff;
     transition: color 0.2s; }
@@ -3719,7 +3718,8 @@ header {
     font-size: 0.8rem;
     text-transform: none;
     border: none;
-    display: inline-block; }
+    display: inline-block;
+    padding: 3px 10px; }
   .sponsorts .search__icon {
     background-color: #cc1474;
     height: 40px;
@@ -3900,7 +3900,7 @@ article {
  */
 .header.header_vie {
   height: 15vh;
-  background-image: url("../img/quote_header.png"), url("../img/silouette_denner.png"), url("../img/pattern_header_left.png"), url("../img/pattern_header_right.png");
+  background-image: url "../img/quote_header.png", url("../img/silouette_denner.png"), url("../img/pattern_header_left.png"), url("../img/pattern_header_right.png");
   background-position: 400px 600px,100px -100px,left top,right top; }
 
 .savie_page {
@@ -3917,14 +3917,17 @@ ul.ancres {
   color: #cc1474;
   text-transform: uppercase;
   font-size: 0.7rem;
-  position: relative;
   margin-right: 20px; }
-  ul.ancres li::after {
-    content: '';
-    position: absolute;
-    height: 8px;
-    width: 8px;
-    background-color: #cc1474; }
+  ul.ancres li {
+    position: relative; }
+    ul.ancres li:after {
+      content: '';
+      position: absolute;
+      height: 8px;
+      width: 8px;
+      background-color: #cc1474;
+      top: 13px;
+      right: -15px; }
 
 .jeunesse.oeuvres {
   height: 120vh; }
@@ -3932,3 +3935,15 @@ ul.ancres {
 .savie__title {
   text-align: right;
   margin: 5vh 0; }
+
+/**
+ * Editions
+ */
+.header.header_edition {
+  height: 30vh;
+  background-image: url("../img/quote_header.png"), url("../img/silouette_denner.png"), url("../img/pattern_header_left.png"), url("../img/pattern_header_right.png");
+  background-position: 400px 600px,100px -100px,left top,right top; }
+
+.editions {
+  height: 65vh;
+  margin-top: 5vh; }
