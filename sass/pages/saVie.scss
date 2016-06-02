@@ -12,14 +12,30 @@
 }
 
 
-.description_vie {
-	padding-right:0px;
+.description_vie.description {
+	padding:0px;
+	text-align:right;
+	display: inline-block;
+
 }
 
-
-
-.ancres {
+ul.ancres {
 	text-align:right;
+	font-family:$secondary-font;
+	color:$secondary;
+	text-transform:  uppercase;
+	font-size:0.7rem;
+	position:relative;
+	margin-right:20px;
+
+
+	li::after{
+		content:'';
+		position:absolute;
+		height: 8px;
+		width: 8px;
+		background-color:$secondary;
+	}
 }
 
 
@@ -28,5 +44,8 @@
 	height: 120vh;
 }
 
-
+.savie__title {
+	text-align:right;
+	margin:5vh 0;
+}
 

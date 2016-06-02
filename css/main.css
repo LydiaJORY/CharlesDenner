@@ -3553,7 +3553,7 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: butler;
+  font-family: butler, serif;
   background-color: #fff;
   color: #000;
   line-height: 33px;
@@ -3593,8 +3593,11 @@ h4 {
 h5 {
   text-transform: uppercase;
   font-size: 1.3rem;
-  padding: 0 15px;
+  padding: 5px 15px 0 15px;
   font-weight: bold; }
+
+input::placeholder {
+  color: pink !important; }
 
 /**
  * Header
@@ -3628,7 +3631,8 @@ header {
     animation: punchline ease-in 1;
     animation-fill-mode: forwards;
     animation-duration: 1s;
-    animation-delay: 0.8s; }
+    animation-delay: 0.8s;
+    color: #fff; }
   header .menu {
     margin: 0;
     padding: 0;
@@ -3658,7 +3662,6 @@ header {
     font-weight: bold;
     font-size: 1.5rem;
     letter-spacing: 10px;
-    margin-left: 35px;
     color: white;
     letter-spacing: 1vh; }
     header .logo span {
@@ -3769,16 +3772,22 @@ header {
 .actu {
   margin-top: 25vh; }
 
-jeun header, .oeuvres, .livre {
+header, .oeuvres, .livre {
   background-color: #004764;
   color: white; }
 
+.description {
+  font-family: "montserratlight", arial;
+  font-size: 0.9rem;
+  padding-right: 20px; }
+
 article {
-  background-color: #004764;
+  background-color: #183545;
   color: white;
   padding: 0 !important;
   font-family: "montserratbold", arial;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: margin-top 0.2s; }
   article a {
     color: white;
     transition: color 0.2s; }
@@ -3791,17 +3800,14 @@ article {
   margin: 0px;
   padding: 0; }
 
-.description {
-  font-family: "montserratlight", arial;
-  font-size: 0.9rem;
-  padding-right: 20px;
-  padding-left: 50px; }
-
 .offsettop {
   margin-top: -100px;
   padding: 0;
   position: relative;
-  z-index: 999; }
+  z-index: 999;
+  transition: margin-top 0.2s; }
+  .offsettop:hover {
+    margin-top: -50px; }
 
 .article__img {
   height: 55vh;
@@ -3818,25 +3824,30 @@ article {
     transform: scale(1.02); }
 
 .large {
-  margin-top: 1vh;
+  margin-top: 30px;
   margin-bottom: 5vh;
   padding: 0 0 !important;
-  height: 30vh;
-  border: 1px solid black;
+  height: 38vh;
   float: none !important; }
 
 .large__img {
   overflow: hidden;
+  height: 50vh;
   background-color: #cc1474; }
 
 .large__img img {
-  min-width: 50%;
+  max-width: 100%;
+  height: auto;
   transform: scale(1.1);
   transition: opacity 0.5s, transform 3s;
   transform-origin: 50% 50%; }
   .large__img img:hover {
     opacity: 0.4;
     transform: scale(1.02); }
+
+.article__img__livre img {
+  max-width: 100%;
+  height: auto; }
 
 .btnlire {
   text-transform: uppercase;
@@ -3876,7 +3887,10 @@ article {
   background: url("../img/pattern_livre.png") no-repeat bottom right #004764; }
 
 .oeuvrebloc {
-  width: 24vw; }
+  height: 70vh; }
+
+.oeuvre__titre {
+  margin-left: 16px; }
 
 .encartActu {
   margin-top: -2vh; }
@@ -3892,11 +3906,29 @@ article {
 .savie_page {
   height: 65vh; }
 
-.description_vie {
-  padding-right: 0px; }
+.description_vie.description {
+  padding: 0px;
+  text-align: right;
+  display: inline-block; }
 
-.ancres {
-  text-align: right; }
+ul.ancres {
+  text-align: right;
+  font-family: montserrat, arial;
+  color: #cc1474;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  position: relative;
+  margin-right: 20px; }
+  ul.ancres li::after {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background-color: #cc1474; }
 
 .jeunesse.oeuvres {
   height: 120vh; }
+
+.savie__title {
+  text-align: right;
+  margin: 5vh 0; }

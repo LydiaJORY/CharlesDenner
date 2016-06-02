@@ -37,7 +37,7 @@
 
 .actu {
     margin-top: 25vh;
-}jeun
+}
 
 
 header, .oeuvres, .livre {
@@ -46,24 +46,38 @@ header, .oeuvres, .livre {
 }
 
 
+.description {
+     font-family: "montserratlight", arial;
+     font-size: 0.9rem;
+     padding-right: 20px;
+     
+}
+
 // ----------ARTICLES
 
 article {
-     background-color: $primary;
+     background-color:$darker;
      color: white;
      padding:0!important;
      font-family: "montserratbold", arial;
      overflow: hidden;
+     transition: margin-top 0.2s;
+
      
-     a {
+    &:hover{
+        //margin-top:-10px;
+    }
+
+    a {
         color: white;
         transition: color 0.2s;
 
         &:hover{
             color:$secondary;
         }
-     }
+    }
 }
+
 
 .tighty {
     padding: 0;
@@ -73,18 +87,18 @@ article {
 }
 
 
-.description {
-     font-family: "montserratlight", arial;
-     font-size: 0.9rem;
-     padding-right: 20px;
-     padding-left:50px;
-}
 
 .offsettop {
     margin-top: -100px;
     padding:0;
     position: relative;
     z-index: 999;
+    transition: margin-top 0.2s;
+
+     
+    &:hover{
+        margin-top:-50px;
+    }
 }
 
 .article__img {
@@ -107,22 +121,24 @@ article {
 
 
 .large {
-    margin-top: 1vh;
+    margin-top: 30px;
     margin-bottom: 5vh;
     padding: 0 0!important;
-    height: 30vh;
-    border: 1px solid black;
+    height: 38vh;
+    
     float: none!important;
 }
 
 
 .large__img { 
     overflow: hidden;
+    height: 50vh;
     background-color:$secondary;   
 }
 
 .large__img img {
-    min-width: 50%;
+    max-width: 100%;
+    height: auto;
     transform: scale(1.1);
     transition: opacity 0.5s, transform 3s;
     transform-origin: 50% 50%;
@@ -133,6 +149,14 @@ article {
     }
 }
 
+.article__img__livre {
+      
+}
+.article__img__livre img {
+    
+    max-width: 100%;
+    height: auto;
+}
 // BOUTONS ------------------
 
 
@@ -144,7 +168,7 @@ article {
     text-align: right;
     padding: 0 15px;
     z-index: 1;
-    //box-shadow: 5px 5px 0px 0px $secondary;
+    
 
     &:before {
         content: '';
@@ -196,11 +220,16 @@ article {
 
 .oeuvrebloc {
 
-    width:24vw;
+    //width:24vw;
+    height: 70vh;
 
     &:first-child{
         
     }
+}
+
+.oeuvre__titre {
+    margin-left: 16px;
 }
 
 // ACTUS

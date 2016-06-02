@@ -18,6 +18,7 @@ header {
         color:#fff;
         transition: color 0.2s;
 
+
         &:hover{
             color:$secondary;
             position: relative;
@@ -33,6 +34,7 @@ header {
         animation-fill-mode:forwards;
         animation-duration:1s;
         animation-delay: 0.8s;
+        color: #fff;
             }
 
     .menu {
@@ -53,7 +55,6 @@ header {
             }
         }
     }
-
 
     nav {
         padding-top: 20px;
@@ -77,7 +78,7 @@ header {
         font-weight: bold;
         font-size: 1.5rem; 
         letter-spacing: 10px;
-        margin-left:35px;
+        
         color: white;
         letter-spacing: 1vh;
    
