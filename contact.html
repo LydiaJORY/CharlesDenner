@@ -23,7 +23,7 @@
                 <nav class="row">
                     <div class="col-md-3 col-md-offset-1">
                         <div class="logo">
-                            <a href="index.html">CHARLES <br>
+                            <a href="index.html">CHARLES<br>
                             <span class="denner">
                                 DENNER</a>
                             </span>
@@ -32,10 +32,10 @@
                     <div class="col-md-7">
                         <ul class="menu">
                             <li><a href="saVie.html">Sa vie</a></li>
-                            <li><a href="#">Son Oeuvre</a></li>
-                            <li><a href="#">Actualités</a></li>
+                            <li><a href="oeuvres.html">Son Oeuvre</a></li>
+                            <li><a href="actualites">Actualités</a></li>
                             <li><a href="editions.html">Edition</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="contact">Contact</a></li>
                             <li><a href="#">Search</a></li>
                             <li><a href="#"><span class="fa fa-facebook"></span></li></a>
                        </ul>
@@ -48,31 +48,44 @@
              <div class="editions">
                 <div class="row">
                     <div class="col-md-5 col-md-offset-1">
-                        <h3 class="text-right"><a href="#">SA VIE</a></h3>
-                        <h4 class="text-right">Un personnage <br/>
-                        hors norme</h4>
+                        <h3 class="text-right"><a href="#">Contact</a></h3>
+                        <h4 class="text-right">La montagne</h4>
 
                         <p class="description text-right">
-                            Sa silhouette et sa voix vous sont familières, surtout si vous êtes un admirateur du cinéma des années 1980. Charles Denner, cet artiste comédien fut à l’affiche de trente-six pièces et quarante-huit films. Il joua avec les plus grands : Jean-Paul Belmondo, Gérard Philipe, Lino Ventura, pour des réalisateurs de taille : Alain Jessua, Claude Lelouch, François Truffaut, Costa Gavras… L’acolyte de Belmondo dans Peur sur la ville, l’Homme qui aimait les femmes, pour Truffaut, c’était lui. 
-                            <br>
-                            <br>
-                            EDITIONS
-                            PRIX
-
-                             <a href="#" class="btnlire">Acheter</a>
-
+                                
+                            Mises en scène ludiques et innovantes, documents authentiques, photographies, affiches, témoignages vidéo et extraits de films pour (re)découvrir ce grand acteur charismatique du cinéma et du théâtre.Mises en scène ludiques et innovantes, documents authentiques, photographies, affiches, témoignages vidéo et extraits de fi
                         </p>
+                        <form method="post" action="">
+                                 
+                            <div class="row"> 
+                                <div class="col-md-6">                       
+                                    <input type="text" name="prenom" id="prenom" placeholder="Tapez votre prénom" autofocus required />
+                                </div>
+
+                                <div class="col-md-6">                            
+                                    <input type="text" name="nom" id="nom" placeholder="Tapez votre nom" autofocus required />
+                                </div>
+                            </div>
+                            
+                                <input type="email" name="email" id="email" placeholder="Rentrez votre email" required/>
+
+                                <input type="text" name="objet" id="objet" placeholder="Rentrez votre objet" required/>
+                            
+                        </form>
                     </div>
                     
                    <div class="col-md-5">
-                        <article class="articlelivre">
-                            <div class="article__img__livre">
-                                <img src="img/telhaidenner.jpg">
-                            </div>
-                            <h5>La montagne en partage</h5>
-                        </article>
-                    </div>
+                        <form method="post" action="">
+                            
+                            <textarea name="message" id="message" placeholder="Votre message" autofocus />
+                            </textarea>
 
+                            
+                            <input type="submit" name="submit" value="Envoyer" class="submit"/>
+                            
+                        </form>
+                        
+                    </div>
                 </div>
             </div>
 

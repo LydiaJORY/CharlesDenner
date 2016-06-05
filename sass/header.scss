@@ -1,29 +1,26 @@
 @keyframes punchline { 
 
-    from { opacity:0; margin-top:13vh; } 
-    to { opacity:1; margin-top:15vh; } 
+    from { opacity:0; margin-top:16vh; } 
+    to { opacity:1; margin-top:19vh; } 
 
 }
 
 header {
     height: 80vh;
     margin:0 0px;
-    background-image: url('../img/quote_header.png'), url('../img/silouette_denner.png'), url('../img/pattern_header_left.png'), url('../img/pattern_header_right.png');
+    background-image: url('../img/quote_header.png'), url('../img/silouette_denner2.png'), url('../img/Denner_lefto.png'), url('../img/Denner_righto.png');
     background-repeat: no-repeat; 
     background-color:#004764;
-    background-position: 400px 600px,100px 100px,left top,right top;
+    background-position: 400px 600px,80px 30px,-200px 250px,900px -200px;
+    background-size:auto, auto, 30% auto, 70% auto;
+
 
     a {
         color:#fff;
         transition: color 0.2s;
 
 
-        &:hover{
-            color:$secondary;
-            position: relative;
-            border-top: 8px solid $secondary;
-            padding-top: 22px;
-        }
+       
     }
 
     .punchline {
@@ -42,6 +39,15 @@ header {
         text-align: right;
         font-size: 0.7rem;
         letter-spacing: 1.4px;
+
+        a {
+            &:hover{
+            color:$secondary;
+            position: relative;
+            border-top: 8px solid $secondary;
+            padding-top: 22px;
+        }
+        }
 
         li {
             display: inline-block;
@@ -84,14 +90,11 @@ header {
         
 
         span {
-            padding-left: 55px;
+            padding-left: 50px;
         }
     }
 
-    .denner {
-       
-        padding-left: 30px;
-    }
+    
 
 }
 

@@ -10,30 +10,32 @@
         <meta name="keywords" content="actor, acteur, Charles Denner, site officiel, cinéma, theatre"> 
         <meta NAME="author" content="Charlet Denner"/>
 
-        <link rel="icon" href="FaviconCharlesDenner.ico" />  
+        <link rel="icon" href="img/fav.ico" />  
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script type="text/javascript" src="js/jQuery.js"></script>
     </head>
+
 
     <body>
         <div class="container-fluid">
-            <header class="header">
 
+            <header class="header">
                 <nav class="row">
-                    <div class="col-md-4 col-md-offset-1">
+                    <div class="col-md-3 col-md-offset-1">
                         <div class="logo">
-                            CHARLES <br>
+                            <a href="index.html">CHARLES <br>
                             <span class="denner">
-                                DENNER
+                                DENNER</a>
                             </span>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-7">
                         <ul class="menu">
-                            <li><a href="#">Sa vie</a></li>
-                            <li><a href="#">Son Oeuvre</a></li>
-                            <li><a href="#">Actualités</a></li>
-                            <li><a href="#">Edition</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="saVie.html">Sa vie</a></li>
+                            <li><a href="oeuvres.html">Son Oeuvre</a></li>
+                            <li><a href="actualites">Actualités</a></li>
+                            <li><a href="editions.html">Edition</a></li>
+                            <li><a href="contact">Contact</a></li>
                             <li><a href="#">Search</a></li>
                             <li><a href="#"><span class="fa fa-facebook"></span></li></a>
                        </ul>
@@ -61,7 +63,7 @@
             <div class="savie">
                 <div class="row">
                     <div class="col-md-4 col-md-offset-1">
-                        <h3 class="text-right"><a href="#">SA VIE</a></h3>
+                        <h3 class="text-right"><a href="saVie.html">SA VIE</a></h3>
                         <h4 class="text-right">Un personnage <br/>
                         hors norme</h4>
 
@@ -71,15 +73,15 @@
                     </div>
                     <div class="col-md-3">
                         <article class="article tighty offsettop"> 
-                            <a href="#">
+                            <a href="article_detail.html">
                                 <div class="article__img">
                                     <img class="" src="img/dennerbain.jpg">
                                 </div>
                             </a>
-                            <a href="#">
+                            <a href="article_detail.html">
                                 <h5>Du TNP de Vilar au cinéma de Chabrol</h5>
                             </a>
-                            <a href="#" class="btnlire">Lire plus</a>
+                            <a href="article_detail.html" class="btnlire"> Lire plus</a>
                         </article>
                     </div>  
 
@@ -117,7 +119,7 @@
                                 <img src="img/telhaidenner.jpg">
                             </div>
                              <a href="#">
-                                <h5>Du TNP de Vilar au cinéma de Chabrol</h5>
+                                <h5>L'aventure c'est l'aventure</h5>
                             </a>
                             <a href="#" class="btnlire">Lire plus</a>
                         </article>
@@ -129,7 +131,7 @@
                                 <img src="img/dennerArc.jpg"> 
                             </div>
                              <a href="#">
-                                <h5>Du TNP de Vilar au cinéma de Chabrol</h5>
+                                <h5>La mariée été en noir</h5>
                             </a>
                             <a href="#" class="btnlire">Lire plus</a>
                         </article>
@@ -165,10 +167,10 @@
             <div class="actu">
                 <div class="row">
                     <div class="col-md-4 col-md-offset-1">
-                        <div class="encartActu">
+                        <div class="encartActu text-right">
                             <h3>ACTUALITES</h3>
                             <h4>Un personnage en éternel mouvement</h4>
-                            <p class="description text-right"> 
+                            <p class="description"> 
                                 Mises en scène ludiques et innovantes, documents authentiques, photographies, affiches, témoignages vidéo et extraits de films pour (re)découvrir ce grand acteur charismatique du cinéma et du théâtre.Mises en scène ludiques et innovantes, documents authentiques, photographies, affiches, témoignages vidéo et extraits de films pour (re)découvrir ce grand acteur charismatique du cinéma et du théâtre
                             </p>
                         </div>
@@ -204,7 +206,7 @@
                                 </div>
                                 <div class="col-md-5">
                                     <a href="#">
-                                        <h5>Du TNP de Vilar au cinéma de Chabrol</h5>
+                                        <h5>Exposition Charles Denner</h5>
                                     </a>
 
                                     <p class="description">
@@ -232,7 +234,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <a href="#"><h3>Le livre</h3></a>
+                        <a href="editions.html"><h3>Le livre</h3></a>
                         <h4>Un personnage en éternel mouvement</h4>
 
                         <p class="description">
@@ -283,5 +285,14 @@
            
             </footer>
         </div>
+
+        <script type="text/javascript">
+            $(function() {
+                $('#splash').click(function() {
+                   $(this).animate({bottom: "-200px"}, 250).animate({bottom: "6000px"}, 1500);
+                });
+                //alert('super'); 
+            });
+        </script>
     </body>
 </html>

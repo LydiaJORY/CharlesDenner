@@ -8,7 +8,7 @@
 
 .savie_page {
 
-    height: 65vh;
+    height: auto;
 }
 
 
@@ -42,14 +42,19 @@ ul.ancres {
 	}
 }
 
-
-
 .jeunesse.oeuvres {
-	height: 120vh;
+	height: auto;
+	margin-bottom:5vh;
 }
 
 .savie__title {
 	text-align:right;
 	margin:5vh 0;
+}
+
+.oeuvres.age_or{
+	padding-top:30px;
+	height:auto;
+
 }
 

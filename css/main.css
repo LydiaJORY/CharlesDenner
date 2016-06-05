@@ -3605,26 +3605,22 @@ h5 {
 @keyframes punchline {
   from {
     opacity: 0;
-    margin-top: 13vh; }
+    margin-top: 16vh; }
   to {
     opacity: 1;
-    margin-top: 15vh; } }
+    margin-top: 19vh; } }
 
 header {
   height: 80vh;
   margin: 0 0px;
-  background-image: url("../img/quote_header.png"), url("../img/silouette_denner.png"), url("../img/pattern_header_left.png"), url("../img/pattern_header_right.png");
+  background-image: url("../img/quote_header.png"), url("../img/silouette_denner2.png"), url("../img/Denner_lefto.png"), url("../img/Denner_righto.png");
   background-repeat: no-repeat;
   background-color: #004764;
-  background-position: 400px 600px,100px 100px,left top,right top; }
+  background-position: 400px 600px,80px 30px,-200px 250px,900px -200px;
+  background-size: auto, auto, 30% auto, 70% auto; }
   header a {
     color: #fff;
     transition: color 0.2s; }
-    header a:hover {
-      color: #cc1474;
-      position: relative;
-      border-top: 8px solid #cc1474;
-      padding-top: 22px; }
   header .punchline {
     opacity: 0;
     animation: punchline ease-in 1;
@@ -3638,6 +3634,11 @@ header {
     text-align: right;
     font-size: 0.7rem;
     letter-spacing: 1.4px; }
+    header .menu a:hover {
+      color: #cc1474;
+      position: relative;
+      border-top: 8px solid #cc1474;
+      padding-top: 22px; }
     header .menu li {
       display: inline-block;
       font-family: montserrat, arial;
@@ -3664,9 +3665,7 @@ header {
     color: white;
     letter-spacing: 1vh; }
     header .logo span {
-      padding-left: 55px; }
-  header .denner {
-    padding-left: 30px; }
+      padding-left: 50px; }
 
 /**
  * Footer
@@ -3675,7 +3674,6 @@ header {
   background: #004764;
   color: #fff;
   text-align: center;
-  padding: 3px 0;
   font-family: montserrat, arial;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -3787,7 +3785,8 @@ article {
   padding: 0 !important;
   font-family: "montserratbold", arial;
   overflow: hidden;
-  transition: margin-top 0.2s; }
+  transition: margin-top 0.2s;
+  margin-bottom: 30px; }
   article a {
     color: white;
     transition: color 0.2s; }
@@ -3796,9 +3795,7 @@ article {
 
 .tighty {
   padding: 0;
-  height: 70vh;
-  margin: 0px;
-  padding: 0; }
+  height: 70vh; }
 
 .offsettop {
   margin-top: -100px;
@@ -3817,15 +3814,13 @@ article {
 .article__img img {
   max-height: 100%;
   transform: scale(1.1);
-  transition: opacity 0.5s, transform 3s;
-  transform-origin: 50% 50%; }
+  transform-origin: 50% 50%;
+  transition: opacity 0.5s, transform 3s ease-out; }
   .article__img img:hover {
     opacity: 0.4;
     transform: scale(1.02); }
 
 .large {
-  margin-top: 30px;
-  margin-bottom: 5vh;
   padding: 0 0 !important;
   height: 38vh;
   float: none !important; }
@@ -3887,7 +3882,7 @@ article {
   background: url("../img/pattern_livre.png") no-repeat bottom right #004764; }
 
 .oeuvrebloc {
-  height: 70vh; }
+  height: auto; }
 
 .oeuvre__titre {
   margin-left: 16px; }
@@ -3904,7 +3899,7 @@ article {
   background-position: 400px 600px,100px -100px,left top,right top; }
 
 .savie_page {
-  height: 65vh; }
+  height: auto; }
 
 .description_vie.description {
   padding: 0px;
@@ -3930,20 +3925,64 @@ ul.ancres {
       right: -15px; }
 
 .jeunesse.oeuvres {
-  height: 120vh; }
+  height: auto;
+  margin-bottom: 5vh; }
 
 .savie__title {
   text-align: right;
   margin: 5vh 0; }
+
+.oeuvres.age_or {
+  padding-top: 30px;
+  height: auto; }
 
 /**
  * Editions
  */
 .header.header_edition {
   height: 30vh;
-  background-image: url("../img/quote_header.png"), url("../img/silouette_denner.png"), url("../img/pattern_header_left.png"), url("../img/pattern_header_right.png");
-  background-position: 400px 600px,100px -100px,left top,right top; }
+  background-image: url("../img/quote_header.png"), url("../img/silouette_denner2.png"), url("../img/Denner_lefto.png"), url("../img/Denner_righto.png");
+  background-position: 400px 600px,80px -90px,-200px 250px,900px -200px;
+  background-size: auto, auto, 30% auto, 70% auto; }
 
 .editions {
-  height: 65vh;
-  margin-top: 5vh; }
+  height: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh; }
+
+/**
+ * Editions
+ */
+textarea, input {
+  background-color: #004764;
+  color: #fff;
+  border: 0;
+  font-family: montserrat, arial;
+  margin: 10px 0;
+  font-size: 0.8rem;
+  padding: 0 15px; }
+
+textarea {
+  width: 100%;
+  height: 50vh; }
+
+input[type=submit] {
+  background-color: #cc1474;
+  text-transform: uppercase;
+  margin: 0; }
+
+input[type=text], input[type=email] {
+  width: 100%;
+  display: block; }
+
+.article__detail p {
+  font-family: montserrat, arial;
+  font-size: 0.8rem;
+  line-height: 30px;
+  margin-bottom: 100px; }
+
+.article__detail p img {
+  width: 100%;
+  background-color: #004764;
+  display: block;
+  overflow: visible; }

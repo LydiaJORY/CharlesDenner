@@ -1,0 +1,43 @@
+textarea, input{
+	background-color:$primary;
+	color:#fff;
+	border:0;
+	font-family:$secondary-font;
+	margin:10px 0;
+	font-size:0.8rem;
+	padding: 0 15px;
+}
+
+textarea {
+
+	width:100%;
+	height:50vh;
+}
+
+input[type=submit] {
+
+	background-color:$secondary;
+	text-transform: uppercase;
+	margin:0;
+}
+
+input[type=text],input[type=email]  {
+
+	width:100%;
+	display:block;
+}
+
+.article__detail p{
+	font-family:$secondary-font;
+	font-size:0.8rem;
+	line-height:30px;
+	margin-bottom:100px;
+}
+
+.article__detail p img{
+	width:100%;
+	background-color:$primary;
+	display:block;
+	overflow:visible;
+}
+
