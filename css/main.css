@@ -3562,6 +3562,9 @@ html, body {
   line-height: 33px;
   font-size: 16px; }
 
+.page {
+  min-height: calc(100vh - 40vh - 35px); }
+
 li {
   list-style: none; }
 
@@ -3677,7 +3680,8 @@ header {
   font-family: montserrat, arial;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 0.6rem; }
+  font-size: 0.6rem;
+  height: 35px; }
   .footer ul {
     margin: 0; }
   .footer a {

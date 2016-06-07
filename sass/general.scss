@@ -14,6 +14,11 @@ html, body{
     font-size:16px;
 }
 
+.page {
+    //30vh for the min size header (with margin), 35px for the height of the footer
+    min-height: calc(100vh - 40vh - 35px);
+}
+
 li {
     list-style: none;
 }
