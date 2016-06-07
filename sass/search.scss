@@ -1,0 +1,47 @@
+
+.search {
+    position: relative;
+
+    label{
+
+        .fa-search {
+            cursor: pointer;
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+
+    input{
+        background-color: darken($secondary, 5%);
+
+        &:focus{
+            background-color: darken($secondary, 10%);
+        }
+    }
+
+}
+#search-btn {
+    position: absolute;
+    left: -99999px;
+}
+#search-btn:checked ~ .search__content {
+    display: block;
+}
+.search__content {
+    background: $secondary;
+    color:white;
+    display: none;
+    position: absolute;
+    top:50px;
+    right:0;
+    z-index: 999999;
+    padding: 0 10px 0 10px;
+    width: 200px;
+
+    .fa-search, input[type="text"] {
+        display: inline-block;
+        max-width: 150px;
+    }
+}
+
