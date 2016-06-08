@@ -8,23 +8,87 @@
 header {
     height: 80vh;
     margin:0 0px;
-    background-image: url('../img/quote_header.png'), url('../img/silouette_denner2.png'), url('../img/Denner_lefto.png'), url('../img/Denner_righto.png');
+    background-image: url('../img/quote_header.png'), url('../img/pattern_header_right.png'), url('../img/Denner_righto.png');
     background-repeat: no-repeat; 
     background-color:#004764;
-    background-position: 400px 600px,80px 30px,-200px 250px,900px -200px;
-    background-size:auto, auto, 30% auto, 70% auto;
+    background-position: 400px 600px,-200px 250px,900px -200px;
+    background-size:auto, 30% auto, 70% auto;
     overflow: hidden;
     position:relative;
 
-    .pochoir {
+    .parallaxe {
         position:absolute;
-        z-index: 9;
-        top: 52px;
-        right:527px;
-        height: 190%;
+       
+    }
 
+    .parallaxe__wrapper {
+        position: absolute;
+        width: 749px;;
+        height: 985px;
+        overflow: hidden;
+        top: 0px;
+        left:14px;
+       
+    }
+
+    .parallaxe.pochoir{
+        background-image: url('../img/pochoir_denner.png');
+        background-size:699px 985px;
+        background-repeat: no-repeat; 
+        top: 42px;
+        left: 133px;
+        width: 699px;
+        height: 985px;
+        z-index: 10;
+        overflow: hidden;
+       
+    }
+
+    .parallaxe.denner1{
+        background-image: url('../img/denner_01.png');
+        background-size:30% 30%;
+        background-position: 50px 185px;
+        background-repeat: no-repeat; 
+        top: 42px;
+        left: 133px;
+        width: 1398px;
+        height: 1971px;
+        z-index: 2;
         
     }
+    .parallaxe.denner2{
+        background-image: url('../img/denner_02.png');
+        background-size: 50% auto;
+        background-position: 363px -12px;
+        background-repeat: no-repeat; 
+        top: 42px;
+        left: 133px;
+        width: 1398px;
+        height: 1971px;
+        z-index: 3;
+    }
+    .parallaxe.denner3{
+        background-image: url('../img/denner_03.png');
+        background-size: 21% auto;
+        background-repeat: no-repeat; 
+        top: 42px;
+        left: 133px;
+        width: 1398px;
+        height: 1971px;
+        z-index: 4;
+    }
+    .parallaxe.denner4{
+        background-image: url('../img/denner_04.jpg');
+        background-size: 705px 1000px;
+        background-position: -2px -16px;
+        background-repeat: no-repeat; 
+        top: 42px;
+        left: 133px;
+        width: 1398px;
+        height: 2004px;
+        z-index: 1;
+    }
+
 
     a {
         color:#fff;
@@ -97,6 +161,8 @@ header {
         
         color: white;
         letter-spacing: 1vh;
+        position: relative;
+        z-index: 90;
    
         
 

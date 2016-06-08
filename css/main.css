@@ -3616,19 +3616,71 @@ h5 {
 header {
   height: 80vh;
   margin: 0 0px;
-  background-image: url("../img/quote_header.png"), url("../img/silouette_denner2.png"), url("../img/Denner_lefto.png"), url("../img/Denner_righto.png");
+  background-image: url("../img/quote_header.png"), url("../img/pattern_header_right.png"), url("../img/Denner_righto.png");
   background-repeat: no-repeat;
   background-color: #004764;
-  background-position: 400px 600px,80px 30px,-200px 250px,900px -200px;
-  background-size: auto, auto, 30% auto, 70% auto;
+  background-position: 400px 600px,-200px 250px,900px -200px;
+  background-size: auto, 30% auto, 70% auto;
   overflow: hidden;
   position: relative; }
-  header .pochoir {
+  header .parallaxe {
+    position: absolute; }
+  header .parallaxe__wrapper {
     position: absolute;
-    z-index: 9;
-    top: 52px;
-    right: 527px;
-    height: 190%; }
+    width: 749px;
+    height: 985px;
+    overflow: hidden;
+    top: 0px;
+    left: 14px; }
+  header .parallaxe.pochoir {
+    background-image: url("../img/pochoir_denner.png");
+    background-size: 699px 985px;
+    background-repeat: no-repeat;
+    top: 42px;
+    left: 133px;
+    width: 699px;
+    height: 985px;
+    z-index: 10;
+    overflow: hidden; }
+  header .parallaxe.denner1 {
+    background-image: url("../img/denner_01.png");
+    background-size: 30% 30%;
+    background-position: 50px 185px;
+    background-repeat: no-repeat;
+    top: 42px;
+    left: 133px;
+    width: 1398px;
+    height: 1971px;
+    z-index: 2; }
+  header .parallaxe.denner2 {
+    background-image: url("../img/denner_02.png");
+    background-size: 50% auto;
+    background-position: 363px -12px;
+    background-repeat: no-repeat;
+    top: 42px;
+    left: 133px;
+    width: 1398px;
+    height: 1971px;
+    z-index: 3; }
+  header .parallaxe.denner3 {
+    background-image: url("../img/denner_03.png");
+    background-size: 21% auto;
+    background-repeat: no-repeat;
+    top: 42px;
+    left: 133px;
+    width: 1398px;
+    height: 1971px;
+    z-index: 4; }
+  header .parallaxe.denner4 {
+    background-image: url("../img/denner_04.jpg");
+    background-size: 705px 1000px;
+    background-position: -2px -16px;
+    background-repeat: no-repeat;
+    top: 42px;
+    left: 133px;
+    width: 1398px;
+    height: 2004px;
+    z-index: 1; }
   header a {
     color: #fff;
     transition: color 0.2s; }
@@ -3674,7 +3726,9 @@ header {
     font-size: 1.5rem;
     letter-spacing: 10px;
     color: white;
-    letter-spacing: 1vh; }
+    letter-spacing: 1vh;
+    position: relative;
+    z-index: 90; }
     header .logo span {
       padding-left: 50px; }
 
@@ -3696,6 +3750,9 @@ header {
   position: absolute;
   left: -99999px; }
 
+#search-btn:checked + label {
+  color: #cc1474; }
+
 #search-btn:checked ~ .search__content {
   display: block; }
 
@@ -3710,7 +3767,7 @@ header {
   padding: 0 10px 0 10px;
   width: 210px;
   text-align: left;
-  box-shadow: 0px 5px 5px #183545; }
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); }
   .search__content:after {
     content: '';
     position: absolute;
