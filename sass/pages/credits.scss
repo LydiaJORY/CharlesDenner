@@ -1,12 +1,18 @@
-.header.header_edition {
+.credits {
+	
+	font-size: 0.9rem;
+	margin:30px 0 50px 0;
+	p{
+		font-family: $secondary-font;
+		margin-top: 20px;
+	}
+}
+
+.credits__header {
+
 	height: 30vh;
 	background-image: url('../img/quote_header.png'), url('../img/silouette_denner2.png'), url('../img/Denner_lefto.png'), url('../img/Denner_righto.png');
 	background-position: 400px 600px,80px -90px,-200px 250px,900px -200px;
     background-size:auto, auto, 30% auto, 70% auto;
-}
 
-.editions {
-	 height: auto;
-	 margin-top: 5vh;
-	 margin-bottom: 5vh;
 }

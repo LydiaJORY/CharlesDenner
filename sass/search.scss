@@ -28,20 +28,43 @@
 #search-btn:checked ~ .search__content {
     display: block;
 }
+
 .search__content {
     background: $secondary;
     color:white;
     display: none;
     position: absolute;
-    top:50px;
+    top:40px;
     right:0;
     z-index: 999999;
     padding: 0 10px 0 10px;
-    width: 200px;
+    width: 210px;
+    text-align: left;
+    box-shadow: 0px 5px 5px $darker;
+    
+    
+    &:after{
+        content:'';
+        position:absolute;
+        top: -10px;
+        right: 0px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 8px 12px 8px;
+        border-color: transparent transparent $secondary transparent;
 
+    }
     .fa-search, input[type="text"] {
         display: inline-block;
         max-width: 150px;
+        height: 30px;
+    }
+
+    .fa-search {
+        background-color: darken($secondary, 15%);
+        padding:10px;
+
     }
 }
 

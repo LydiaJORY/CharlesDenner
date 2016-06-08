@@ -1,6 +1,5 @@
-.container-fluid {
-    padding: 0;
-}
+
+
 html, body{
 
 	margin : 0 0 0 -8px;
@@ -13,6 +12,11 @@ html, body{
     line-height: 33px;
     font-size:16px;
 }
+
+.container-fluid {
+    padding: 0;
+}
+
 
 .page {
     //30vh for the min size header (with margin), 35px for the height of the footer
@@ -64,3 +68,9 @@ h5{
     padding : 5px 15px 0 15px;
     font-weight:bold;
 }
+
+
+
+
+
+

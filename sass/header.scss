@@ -13,7 +13,18 @@ header {
     background-color:#004764;
     background-position: 400px 600px,80px 30px,-200px 250px,900px -200px;
     background-size:auto, auto, 30% auto, 70% auto;
+    overflow: hidden;
+    position:relative;
 
+    .pochoir {
+        position:absolute;
+        z-index: 9;
+        top: 52px;
+        right:527px;
+        height: 190%;
+
+        
+    }
 
     a {
         color:#fff;
@@ -93,6 +104,8 @@ header {
             padding-left: 50px;
         }
     }
+
+   
 
     
 
