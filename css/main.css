@@ -3551,8 +3551,8 @@ address {
 html, body {
   margin: 0 0 0 -8px;
   padding: 0;
-  height: 100%;
-  width: 100%;
+  height: 10vh;
+  width: 100vw;
   font-family: butler, serif;
   background-color: #fff;
   color: #000;
@@ -3599,8 +3599,9 @@ h4 {
 h5 {
   text-transform: uppercase;
   font-size: 1.3rem;
-  padding: 5px 15px 0 15px;
-  font-weight: bold; }
+  padding: 5px 15px 0 25px;
+  font-weight: bold;
+  line-height: 28px; }
 
 /**
  * Header
@@ -3631,7 +3632,7 @@ header {
     height: 985px;
     overflow: hidden;
     top: 0px;
-    left: 14px; }
+    left: -51px; }
   header .parallaxe.pochoir {
     background-image: url("../img/pochoir_denner.png");
     background-size: 699px 985px;
@@ -3686,9 +3687,9 @@ header {
     transition: color 0.2s; }
   header .punchline {
     opacity: 0;
-    animation: punchline ease-in 1;
+    animation: punchline ease-out 1;
     animation-fill-mode: forwards;
-    animation-duration: 1s;
+    animation-duration: 1.3s;
     animation-delay: 0.8s;
     color: #fff; }
   header .menu {
@@ -3729,8 +3730,21 @@ header {
     letter-spacing: 1vh;
     position: relative;
     z-index: 90; }
-    header .logo span {
-      padding-left: 50px; }
+    header .logo:hover .charles {
+      left: -25px; }
+    header .logo .charles {
+      position: absolute;
+      left: 0px;
+      transition: padding-left 1.5s;
+      transition-timing-function: ease-out; }
+      header .logo .charles:hover {
+        left: -25px; }
+    header .logo .denner {
+      padding-left: 50px;
+      transition: padding-left 1.5s;
+      transition-timing-function: ease-out; }
+      header .logo .denner:hover {
+        padding-left: 78px; }
 
 /**
  * Search
@@ -3872,9 +3886,9 @@ header {
 .oeuvres, .livre {
   margin-bottom: 8vh;
   transition: color 0.2s; }
-  .oeuvres a, .livre a {
+  .oeuvres h3, .livre h3 {
     color: white; }
-    .oeuvres a:hover, .livre a:hover {
+    .oeuvres h3:hover, .livre h3:hover {
       color: #cc1474;
       animation: rollOver ease-in 1;
       animation-fill-mode: forwards;
@@ -3897,20 +3911,19 @@ header, .oeuvres, .livre {
 .description {
   font-family: "montserratlight", arial;
   font-size: 0.9rem;
-  padding-right: 20px; }
+  margin-bottom: 18px; }
 
 article {
   background-color: #183545;
   color: white;
-  padding: 0 !important;
   font-family: "montserratbold", arial;
   overflow: hidden;
   transition: margin-top 0.2s;
   margin-bottom: 30px; }
-  article a {
+  article h5 {
     color: white;
     transition: color 0.2s; }
-    article a:hover {
+    article h5:hover {
       color: #cc1474; }
 
 .tighty {
@@ -3923,8 +3936,6 @@ article {
   position: relative;
   z-index: 999;
   transition: margin-top 0.2s; }
-  .offsettop:hover {
-    margin-top: -50px; }
 
 .article__img {
   height: 55vh;
@@ -3964,35 +3975,37 @@ article {
   max-width: 100%;
   height: auto; }
 
-.btnlire {
+a.btnlire {
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 1px;
   position: relative;
   text-align: right;
-  padding: 0 15px;
-  z-index: 1; }
-  .btnlire:before {
+  padding: 3px 24px 3px 24px;
+  z-index: 1;
+  display: block;
+  color: white; }
+  a.btnlire:hover {
+    padding: 3px 24px 3px 24px; }
+  a.btnlire:before {
     content: '';
     height: 15px;
-    width: 80px;
+    width: 62px;
     background-color: #cc1474;
     position: absolute;
-    top: 6px;
-    right: 0;
-    z-index: -1; }
-  .btnlire:hover::before {
-    top: 0px;
-    right: 10px;
+    top: 4px;
+    right: 16px;
     z-index: -1;
-    content: 'Lire plus';
-    color: white;
-    transition: top 0.1s, right 0.1s; }
-  .btnlire:active::before {
-    color: #cc1474;
-    top: 0px;
-    right: 0px;
-    transition: top 0.1s, right 0.1s; }
+    transition: top 0.1s, right 0.1s;
+    transition-timing-function: ease-out; }
+  a.btnlire:hover::before {
+    top: 19px;
+    right: 47px;
+    z-index: -1;
+    content: '';
+    color: white !important; }
+  a.btnlire:active::before {
+    color: #cc1474; }
 
 .articlelivre {
   height: 370px;
@@ -4006,11 +4019,21 @@ article {
 .oeuvrebloc {
   height: auto; }
 
+.oeuvrebloc.firstbloc h5 {
+  padding: 5px 15px 0 40px; }
+
+.firstbloc .btnlire {
+  padding-left: 37px; }
+
 .oeuvre__titre {
   margin-left: 16px; }
 
 .encartActu {
   margin-top: -2vh; }
+
+article a.btnlire {
+  position: relative;
+  display: inline-block; }
 
 /**
  * saVie
@@ -4034,17 +4057,22 @@ ul.ancres {
   color: #cc1474;
   text-transform: uppercase;
   font-size: 0.7rem;
-  margin-right: 20px; }
+  margin-right: 47px; }
   ul.ancres li {
-    position: relative; }
+    position: relative;
+    display: block;
+    left: 0px;
+    transition: all 0.4s ease-in-out; }
+    ul.ancres li:hover {
+      left: -20px; }
     ul.ancres li:after {
       content: '';
       position: absolute;
       height: 8px;
-      width: 8px;
+      width: 30px;
       background-color: #cc1474;
       top: 13px;
-      right: -15px; }
+      right: -37px; }
 
 .jeunesse.oeuvres {
   height: auto;
@@ -4086,7 +4114,8 @@ textarea, input {
 
 textarea {
   width: 100%;
-  height: 50vh; }
+  height: 50vh;
+  margin-top: 228px; }
 
 input[type=submit] {
   background-color: #cc1474;

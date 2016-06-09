@@ -2,21 +2,16 @@
    height: 15vh;
    background-image: url ('../img/quote_header.png'), url('../img/silouette_denner.png'), url('../img/pattern_header_left.png'), url('../img/pattern_header_right.png');
    background-position: 400px 600px,100px -100px,left top,right top;
-
 }
-
 
 .savie_page {
-
     height: auto;
 }
-
 
 .description_vie.description {
 	padding:0px;
 	text-align:right;
 	display: inline-block;
-
 }
 
 ul.ancres {
@@ -25,19 +20,26 @@ ul.ancres {
 	color:$secondary;
 	text-transform:  uppercase;
 	font-size:0.7rem;
-	margin-right:20px;
+	margin-right: 47px;
 
 	li {
 		position:relative;
+		display: block;
+		left:0px;
+		transition: all 0.4s ease-in-out;
+
+		&:hover{
+			left:-20px;
+		}
 
 		&:after{
 			content:'';
 			position:absolute;
 			height: 8px;
-			width: 8px;
+			width: 30px;
 			background-color:$secondary;
 			top: 13px;
-			right: -15px;
+			right: -37px;
 		}
 	}
 }

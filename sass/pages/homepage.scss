@@ -12,7 +12,7 @@
     margin-bottom: 8vh;
     transition: color 0.2s;
 
-    a {
+    h3 {
         color: white;
 
         &:hover {
@@ -49,7 +49,8 @@ header, .oeuvres, .livre {
 .description {
      font-family: "montserratlight", arial;
      font-size: 0.9rem;
-     padding-right: 20px;
+     margin-bottom: 18px;
+     
      
 }
 
@@ -58,7 +59,6 @@ header, .oeuvres, .livre {
 article {
      background-color:$darker;
      color: white;
-     padding:0!important;
      font-family: "montserratbold", arial;
      overflow: hidden;
      transition: margin-top 0.2s;
@@ -69,7 +69,7 @@ article {
        
     }
 
-    a {
+    h5 {
         color: white;
         transition: color 0.2s;
 
@@ -98,7 +98,7 @@ article {
 
      
     &:hover{
-        margin-top:-50px;
+        
     }
 }
 
@@ -149,9 +149,7 @@ article {
     }
 }
 
-.article__img__livre {
-      
-}
+
 .article__img__livre img {
     
     max-width: 100%;
@@ -160,44 +158,49 @@ article {
 // BOUTONS ------------------
 
 
-.btnlire {
+a.btnlire {
     text-transform:uppercase;
     font-size: 0.8rem;
     letter-spacing: 1px;
     position:relative;
     text-align: right;
-    padding: 0 15px;
+    padding: 3px 24px 3px 24px;
     z-index: 1;
-    
+    display: block;
+    color: white;
+
+    &:hover{
+        padding: 3px 24px 3px 24px;
+    }
 
     &:before {
         content: '';
         height: 15px;
-        width: 80px;
-        background-color:$secondary;
-        position:absolute;
-        //display: block;
-        top: 6px;
-        right: 0;
+        width: 62px;
+        background-color: #cc1474;
+        position: absolute;
+        top: 4px;
+        right: 16px;
         z-index: -1;
+        transition: top 0.1s, right 0.1s;
+        transition-timing-function: ease-out;
 
     }
 
     &:hover::before {
-        top: 0px;
-        right: 10px;
+
+        top: 19px;
+        right: 47px;
         z-index: -1;
-        content: 'Lire plus';
-        color: white;
-        transition: top 0.1s, right 0.1s;
+        content: '';
+        color: white!important;
+        
     }
 
     &:active::before {
         
         color: $secondary;
-        top: 0px;
-        right: 0px;
-        transition: top 0.1s, right 0.1s;
+        
 
     }
 }
@@ -216,6 +219,7 @@ article {
 
     .description{
         padding-right:100px;
+
     }
 }
 
@@ -223,14 +227,24 @@ article {
 // OEUVRES
 
 .oeuvrebloc {
-
-    //width:24vw;
     height: auto;
 
     &:first-child{
+        //margin-left: 10px;
         
     }
 }
+
+.oeuvrebloc.firstbloc h5{
+    padding : 5px 15px 0 40px;
+
+}
+
+.firstbloc .btnlire {
+    padding-left:37px;
+}
+
+
 
 .oeuvre__titre {
     margin-left: 16px;
@@ -248,7 +262,10 @@ article {
 
 // PAGE sa VIE
 
-
+article a.btnlire{
+    position:relative;
+    display: inline-block;
+}
 
 
 
