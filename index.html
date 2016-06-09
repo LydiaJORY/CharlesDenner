@@ -12,10 +12,12 @@
 
         <link rel="icon" href="img/fav.ico" />  
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <script type="text/javascript" src="js/jQuery.js"></script>
+    
     </head>
 
     <body>
+
+
         <div class="container-fluid">
 
             <header class="header">
@@ -67,12 +69,12 @@
                 </div>
 
                 <!-- IT'S PARALLAXE TIME !! -->
-                <div class="parallaxe__wrapper">
+                <div class="parallaxe__wrapper" id="parallaxeWrap">
                     <div class="parallaxe pochoir"></div>
-                    <div class="parallaxe denner1"></div>
-                    <div class="parallaxe denner2"></div>
-                    <div class="parallaxe denner3"></div>
-                    <div class="parallaxe denner4"></div>
+                    <div class="parallaxe denner1" id="l1"></div>
+                    <div class="parallaxe denner2" id="l2"></div>
+                    <div class="parallaxe denner3" id="l3"></div>
+                    <div class="parallaxe denner4" id="l4"></div>
                 </div>
 
             </header>
@@ -303,13 +305,8 @@
             </footer>
         </div>
 
-        <script type="text/javascript">
-            $(function() {
-                $('#splash').click(function() {
-                   $(this).animate({bottom: "-200px"}, 250).animate({bottom: "6000px"}, 1500);
-                });
-                //alert('super'); 
-            });
-        </script>
+        <script type="text/javascript" src="js/jQuery.js"></script>
+        <script type="text/javascript" src="js/parallaxe.js"></script>
+
     </body>
 </html>
